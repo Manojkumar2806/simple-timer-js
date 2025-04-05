@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-Conainer {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem !important;
+    transition: transform 0.3s ease;
+}
+
+.card-Conainer:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #2c3e50;
+    font-family: "Cursive";
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem !important;
+    text-align: center;
+}
+
+#timerDisplay {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#status {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.timer-controls button {
+    margin: 5px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timer-controls button:active {
+    transform: translateY(1px);
+}
+
+#startBtn {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+}
+
+#startBtn:hover {
+    background-color: #27ae60;
+}
+
+#pauseBtn {
+    background-color: #f39c12;
+    border-color: #e67e22;
+}
+
+#pauseBtn:hover {
+    background-color: #e67e22;
+}
+
+#resetBtn {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
+
+#resetBtn:hover {
+    background-color: #c0392b;
+}
+
+.time-adjuster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.time-adjuster button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.time-adjuster button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+#minuteValue {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #34495e;
+    margin: 0 1rem;
+    min-width: 40px;
+    text-align: center;
+}
